@@ -16,7 +16,7 @@ function find(lines: string[], bit: (count: number, length: number) => string) {
     }, lines)[0];
 }
 
-async function puzzle2(fileName: string): Promise<any> {
+async function puzzle2(fileName: string): Promise<number> {
     const text = await Deno.readTextFile(`./${fileName}.txt`);
     const lines = text.split(/\n/);
     const oxygen = find(lines, (count, length) =>

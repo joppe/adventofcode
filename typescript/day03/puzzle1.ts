@@ -2,7 +2,7 @@ function getBit(value: number, half: number): number {
     return value > half ? 1 : 0;
 }
 
-async function puzzle1(fileName: string): Promise<any> {
+async function puzzle1(fileName: string): Promise<number> {
     const text = await Deno.readTextFile(`./${fileName}.txt`);
     const lines = text.split(/\n/);
 
