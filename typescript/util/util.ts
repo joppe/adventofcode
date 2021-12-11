@@ -11,11 +11,3 @@ export function toInt(str: string): number {
 export function square(nmbr: number): number {
     return nmbr * nmbr;
 }
-
-function isSameArray<T>(a: T[], b: T[]): boolean {
-    if (a.length !== b.length) {
-        return false;
-    }
-
-    return a.every((el) => b.includes(el));
-}
